@@ -1,0 +1,32 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "deep_analysis_of_school_dropout_in_mexico"
+version = "0.0.1"
+description = "This project aims to provide an in-depth analysis of school dropout rates in Mexico by leveraging data science techniques. We explore the key factors contributing to student dropout, identify patterns and trends across different regions and demographics, and apply machine learning models to predict dropout risk. The goal is to generate actionable insights that can inform policymakers and educators to implement effective interventions and improve student retention across the country."
+authors = [
+  { name = "Artur Machado" },
+]
+
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    
+]
+requires-python = "~=3.10.0"
+
+
+[tool.ruff]
+line-length = 99
+src = ["deep_analysis_of_school_dropout_in_mexico"]
+include = ["pyproject.toml", "deep_analysis_of_school_dropout_in_mexico/**/*.py"]
+
+[tool.ruff.lint]
+extend-select = ["I"]  # Add import sorting
+
+[tool.ruff.lint.isort]
+known-first-party = ["deep_analysis_of_school_dropout_in_mexico"]
+force-sort-within-sections = true
+

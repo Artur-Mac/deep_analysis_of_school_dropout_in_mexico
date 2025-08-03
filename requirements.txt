@@ -1,0 +1,10 @@
+ipython
+jupyterlab
+matplotlib
+notebook
+numpy
+pandas
+pip
+python-dotenv
+scikit-learn
+-e .
